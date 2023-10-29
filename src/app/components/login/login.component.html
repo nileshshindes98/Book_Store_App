@@ -1,0 +1,88 @@
+<div class="main"
+  [ngStyle]="changeMainContainerBgCOlor ? {'background-color': '#878787'} : {'background-color': '#707070'}">
+  <mat-card class="logo-img-main">
+    <mat-card-content class="logo-content">
+      <img src="../../../assets/loginPageCart_Img.png" alt="" class="logo">
+      <h3 class="heading">Online Book Shopping</h3>
+    </mat-card-content>
+  </mat-card>
+
+
+  <mat-card class="login-signup-contanier">
+    <mat-tab-group animationDuration="0ms" (click)="onTabChange()">
+      <mat-tab label="LOGIN">
+        <mat-card class="sub-container">
+          <form class="form-container-login" [formGroup]="login">
+            <p>
+              <mat-form-field appearance="outline">
+                <mat-label>Email id</mat-label>
+                <input matInput placeholder="" type="email" formControlName="email">
+                <mat-error>enter valid email</mat-error>
+              </mat-form-field>
+            </p>
+
+            <p>
+              <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="" type="password" formControlName="password">
+                <mat-error>enter valid password</mat-error>
+              </mat-form-field>
+            </p>
+
+            <button mat-raised-button class="custom-button" color="primary" (click)="loginUser()">Login</button>
+
+            <div>
+              <img src="../../../assets/or.PNG" alt="" style="padding: 32px 0px 32px 0px;">
+            </div>
+
+            <div class="facebook-google-button">
+              <button class="facebook-button">Facebook</button>
+              <button class="google-button">Google</button>
+            </div>
+          </form>
+        </mat-card>
+      </mat-tab>
+
+
+      <mat-tab label="SIGNUP">
+        <mat-card class="sub-container">
+          <form class="form-container-signUP" [formGroup]="signup">
+       
+              <mat-form-field appearance="outline">
+                <mat-label>Full Name</mat-label>
+                <input matInput placeholder="" formControlName="name">
+                <mat-error>enter valid Name</mat-error>
+              </mat-form-field>
+           
+
+         
+              <mat-form-field appearance="outline">
+                <mat-label>Email Id</mat-label>
+                <input matInput placeholder="" type="email" formControlName="email">
+                <mat-error>enter valid email</mat-error>
+              </mat-form-field>
+     
+
+          
+              <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="" type="password" formControlName="password">
+                <mat-error>enter valid Password</mat-error>
+              </mat-form-field>
+        
+
+          
+              <mat-form-field appearance="outline">
+                <mat-label>Mobile Number</mat-label>
+                <input matInput placeholder="" formControlName="mobNo">
+                <mat-error>enter valid Mobile Number</mat-error>
+              </mat-form-field>
+       
+
+            <button mat-raised-button class="custom-button" color="primary" (click)="registerNewUser()">Signup</button>
+          </form>
+        </mat-card>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+</div>
