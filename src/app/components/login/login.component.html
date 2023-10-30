@@ -1,5 +1,4 @@
-<div class="main"
-  [ngStyle]="changeMainContainerBgCOlor ? {'background-color': '#878787'} : {'background-color': '#707070'}">
+<div class="main">
   <mat-card class="logo-img-main">
     <mat-card-content class="logo-content">
       <img src="../../../assets/loginPageCart_Img.png" alt="" class="logo">
@@ -9,7 +8,7 @@
 
 
   <mat-card class="login-signup-contanier">
-    <mat-tab-group animationDuration="0ms" (click)="onTabChange()">
+    <mat-tab-group  fitInkBarToContent >
       <mat-tab label="LOGIN">
         <mat-card class="sub-container">
           <form class="form-container-login" [formGroup]="login">
