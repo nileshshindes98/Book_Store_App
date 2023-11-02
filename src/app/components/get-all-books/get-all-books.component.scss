@@ -1,0 +1,34 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+  z-index: 1;
+}
+
+.main-container {
+  margin: 5vw 16vh;
+  padding: 0 1vh;
+}
+
+.books-span {
+  letter-spacing: 0px;
+  color: #0a0102;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  /* Medium */
+  font-size: 25px;
+  // line-height: 13px;
+}
+
+/***************************************************/
+.select-box {
+  width: 161px;
+  height: 30px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #e2e2e2;
+  border-radius: 1px;
+  opacity: 1;
+  cursor: pointer;
+}
