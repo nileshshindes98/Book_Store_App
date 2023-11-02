@@ -1,0 +1,29 @@
+<div class="book-card-container">
+  <ng-container *ngFor="let book of AllBooksData">
+    <mat-card class="book-card">
+      <div class='book-img-div'>
+        <img mat-card-image src="../../../assets/Image 11.png" alt="">
+      </div>
+      <mat-card-content class="book-details">
+
+        <span class="book-name">{{book.bookName}}</span>
+        <span class="author-name">{{book.author}}</span>
+        <div class="rating-and-count">
+          <div class="rating">
+              4.5
+              <img src="../../../assets/RatingstarImg.svg" alt="" style=" margin: 2px 0 0 2px;
+                  height: 10px;">
+          </div>   
+          <span class="count">(20)</span>
+      </div>
+
+      <div class="price">
+          <span class="discount-price">Rs. {{book.discountPrice}}</span>
+          <span class="main-price">Rs.{{book.price}}</span>
+      </div>
+      </mat-card-content> 
+    </mat-card>
+  </ng-container>
+</div>
+<mat-paginator [pageSize]="pageSize" [length]="AllBooksData.length"></mat-paginator>
+
