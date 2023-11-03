@@ -1,0 +1,476 @@
+.main {
+    margin-top:6%;
+    display: flex;
+    padding-left: 180px;
+    // padding-right: 165px;
+    //   height: fit-content;
+    //   word-break: break-all;
+    flex-direction: column;
+    // width: 100%;
+    height: 100%;
+    margin-bottom: 200px;
+  }
+  
+  .toggle-links {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    align-items: center;
+  }
+  
+  .link {
+    letter-spacing: 0px;
+    opacity: 1;
+  
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 12px;
+    line-height: 16px;
+    cursor: pointer;
+  }
+  
+  .home-link {
+    color: #9d9d9d;
+  }
+  
+  .book-link {
+    color: #0a0102;
+  }
+  
+  /******************************************************/
+  .main-sub-container {
+    width: 1015px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .small-book {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .first-img-small {
+    width: 44px;
+    height: 54px;
+    /* UI Properties */
+    border: 1px solid #7c1e1e;
+    border-radius: 1px 1px 1px 0px;
+    opacity: 1;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .second-img-small {
+    width: 44px;
+    height: 54px;
+    /* UI Properties */
+    border: 1px solid #d1d1d1;
+    border-radius: 0px 1px 1px 1px;
+    opacity: 1;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  /*********************************************/
+  .main-book-cartWishList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+  
+  .main-book-img {
+    width: 361px;
+    height: 413px;
+    /* UI Properties */
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .buttons-cart-wishlist {
+    width: 361px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .addToCartButton {
+    width: 170px;
+    height: 40px;
+    background: #a03037 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    border: transparent;
+    opacity: 1;
+    color: #ffffff;
+    letter-spacing: 0px;
+    opacity: 1;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    // line-height: 14px;
+    cursor: pointer;
+  }
+  
+  .increase-qty {
+    width: 170px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+  }
+  
+  .decrease-increase-button {
+    background: #fafafa 0% 0% no-repeat padding-box;
+    border: 1px solid #dbdbdb;
+    opacity: 1;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    color: #0a0102;
+    font: 2em sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .qty {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    opacity: 1;
+    width: 66px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    letter-spacing: 0px;
+    color: #333232;
+   
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+  }
+  
+  .wishListButton {
+    width: 170px;
+    height: 40px;
+    background: #333333 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    border: transparent;
+    opacity: 1;
+    color: #ffffff;
+    letter-spacing: 0px;
+  
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    // line-height: 14px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  /***********************************************************/
+  .book-details-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    margin-top: 5px;
+    width: 557px;
+  }
+  
+  .book-name {
+    letter-spacing: 0px;
+    color: #0a0102;
+    opacity: 1;
+  
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+  }
+  
+  .author-name {
+    margin-top: 10px;
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+  
+    font-family: "Roboto", sans-serif;
+    font-weight: 420;
+    font-size: 18px;
+  }
+  
+  .rating-and-count {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+    width: 55px;
+    height: 25px;
+    /* UI Properties */
+    background: #388e3c 0% 0% no-repeat padding-box;
+    border-radius: 1px;
+    opacity: 1;
+    gap: 5px;
+  }
+  
+  .count {
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+  
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 15px;
+    line-height: 13px;
+    //   padding: 3px 0px 0px 3px;
+  }
+  
+  .price {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .discount-price {
+    letter-spacing: 0px;
+    color: #0a0102;
+    opacity: 1;
+  
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 30px;
+    line-height: 39px;
+  }
+  
+  .main-price {
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+  
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: line-through;
+  }
+  
+  .book-discription {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .book-discription-label {
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+  
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+  .discription {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 12px;
+    line-height: 16px;
+  
+    letter-spacing: 0px;
+    color: #373434;
+    opacity: 1;
+  }
+  
+  .customer-feedback-label {
+    margin-top: 12px;
+    letter-spacing: 0px;
+    color: #0a0102;
+    opacity: 1;
+  
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .rating-box {
+    margin-top: 12px;
+    width: 557px;
+    height: 192px;
+    /* UI Properties */
+    background: #f5f5f5 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 0.63;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+  }
+  
+  .rating-label {
+    letter-spacing: 0px;
+    color: #0a0102;
+    opacity: 1;
+  
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 12px;
+    line-height: 16px;
+    padding: 8px;
+  }
+  
+  .rating-stars {
+    padding-left: 5px;
+    width: 173px;
+    height: 19px;
+    /* UI Properties */
+    opacity: 1;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .review {
+    width: 527px;
+    height: 63px;
+    /* UI Properties */
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    margin: 9px;
+  }
+  
+  .writeReview {
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 0.18;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 15px;
+    line-height: 20px;
+    width: 300px;
+    height: 31px;
+    border: none;
+  }
+  
+  .submitButton {
+    background: #265d98 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+    width: 76px;
+    height: 24px;
+    text-align: center;
+    border: none;
+    color: #ffffff;
+    letter-spacing: 0px;
+    font-weight: 500; /* Medium */
+    font-size: 14px;
+    line-height: 19px;
+    margin-left: 460px;
+    cursor: pointer;
+  }
+  
+  .customer-reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 551px;
+    height: 100px;
+    /* UI Properties */
+    opacity: 1;
+  }
+  
+  .customer-Name {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    height: 28px;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 27px;
+    height: 27px;
+    /* UI Properties */
+    background: #f5f5f5 0% 0% no-repeat padding-box;
+    border: 1px solid #e4e4e4;
+
+  
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 0.55;
+  
+    font-weight: 500; /* Medium */
+    font-size: 11px;
+    line-height: 15px;
+  }
+  
+  .customer-name {
+    letter-spacing: 0px;
+    color: #0a0102;
+    opacity: 1;
+    font-weight: 500; /* Medium */
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+  .review-star {
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+    margin-left: 40px;
+  }
+  
+  .review-msg {
+    margin-left: 40px;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+  
+    font-weight: 500; /* Medium */
+    font-size: 12px;
+    line-height: 16px;
+  }
+  

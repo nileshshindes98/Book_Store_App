@@ -1,0 +1,135 @@
+<div class="main">
+    <div class="toggle-links">
+        <span class="link home-link" routerLink="">Home /</span>
+        <span class="link book-link" routerLink="quickView">Book(01)</span>
+    </div>
+    <br>
+    <div class="main-sub-container">
+
+
+        <div class="small-book">
+            <div class="first-img-small">
+                <img src="../../../assets/Image 1.png" alt="" style="width: 37px;
+        height: 45px; opacity: 1;">
+            </div>
+            <div class="second-img-small">
+                <img src="../../../assets/Image 46.png" alt="" style="width: 37px;
+        height: 45px; opacity: 1;">
+            </div>
+        </div>
+
+
+        <div class="main-book-cartWishList">
+            <div class="main-book-img">
+                <img src="../../../assets/dont make book big.png" alt="" style="width: 282px;
+                height: 364px; opacity: 1;">
+            </div>
+
+            <div class="buttons-cart-wishlist">
+                <button class="addToCartButton" *ngIf="!hideCartButton" (click)="showcart()">ADD TO BAG</button>
+                <div *ngIf="hideCartButton" class="increase-qty">
+                    <button class="decrease-increase-button" [disabled]="qty === 1" (click)=" decreaseQTY()">-</button>
+                    <div class="qty">{{qty}}</div>
+                    <button class="decrease-increase-button" (click)="increaseQTY()">+</button>
+                </div>
+                <button class="wishListButton"><img src="../../../assets/heart.svg" alt=""> WISHLIST</button>
+            </div>
+        </div>
+
+        <div class="book-details-container">
+            <span class="book-name">{{bookData.bookName}}</span>
+            <span class="author-name">{{bookData.author}}</span>
+            <div class="rating-and-count">
+                <div class="rating">
+                    4.5
+                    <img src="../../../assets/RatingstarImg.svg" alt="" style="height: 12px; margin-bottom: 2px;">
+                </div>
+                <span class="count">(20)</span>
+            </div>
+
+            <div class="price">
+                <span class="discount-price">Rs.{{bookData.discountPrice}}</span>
+                <span class="main-price">Rs.{{bookData.price}}</span>
+            </div>
+
+            <mat-divider></mat-divider>
+
+            <div class="book-discription">
+                <li class="book-discription-label">Book Detail</li>
+                <p class="discription">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                    clita kasd gubergren, no sea takimata sanctus est
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                    clita kasd gubergren, no sea takimata sanctus est
+                </p>
+            </div>
+
+            <mat-divider></mat-divider>
+
+            <span class="customer-feedback-label">Customer Feedback</span>
+
+            <div class="rating-box">
+                <span class="rating-label">Overall rating</span>
+                <div class="rating-stars">
+                    <img src="../../../assets/star_border_black_18dp.svg" alt="">
+                    <img src="../../../assets/star_border_black_18dp.svg" alt="">
+                    <img src="../../../assets/star_border_black_18dp.svg" alt="">
+                    <img src="../../../assets/star_border_black_18dp.svg" alt="">
+                    <img src="../../../assets/star_border_black_18dp.svg" alt="">
+                </div>
+                <div class="review">
+                    <input type="text" placeholder="Write your review" class="writeReview">
+                </div>
+                <button class="submitButton">Submit</button>
+            </div>
+
+            <div class="customer-reviews">
+                <div class="customer-Name">
+                    <div class="icon">AC</div>
+                    <span class="customer-name">Nilesh Shinde</span>
+                </div>
+                <div class="review-star">
+                    <img src="../../../assets/star.png" alt="" style="width: 20px;
+                    height: 19px;">
+                    <img src="../../../assets/star.png" alt="" style="width: 20px;
+                    height: 19px;">
+                    <img src="../../../assets/star.png" alt="" style="width: 20px;
+                    height: 19px;">
+                    <img src="../../../assets/star_border_black_18dp.svg" alt="">
+                    <img src="../../../assets/star_border_black_18dp.svg" alt="">
+                </div>
+
+                <p class="review-msg">Good product. Even though the translation could have been better, Chanakya's neeti
+                    are thought provoking. Chanakya has written on many different topics and his writings are succinct.
+                </p>
+            </div>
+            <br>
+
+            <div class="customer-reviews">
+                <div class="customer-Name">
+                    <div class="icon">AC</div>
+                    <span class="customer-name">Nilesh Shinde</span>
+                </div>
+                <div class="review-star">
+                    <img src="../../../assets/star.png" alt="" style="width: 20px;
+                    height: 19px;">
+                    <img src="../../../assets/star.png" alt="" style="width: 20px;
+                    height: 19px;">
+                    <img src="../../../assets/star.png" alt="" style="width: 20px;
+                    height: 19px;">
+                    <img src="../../../assets/star.png" alt="" style="width: 20px;
+                    height: 19px;">
+                    <img src="../../../assets/star_border_black_18dp.svg" alt="">
+                </div>
+
+                <p class="review-msg">Good product. Even though the translation could have been better, Chanakya's neeti
+                    are thought provoking. Chanakya has written on many different topics and his writings are succinct.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
