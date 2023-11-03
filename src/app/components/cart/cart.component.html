@@ -1,0 +1,71 @@
+<div class="main">
+  <div class="toggle-links">
+    <span class="link home-link" routerLink="/dashboard">Home /</span>
+    <span class="link book-link" routerLink="/dashboard/cart">My cart</span>
+  </div>
+  <br />
+
+  <div class="main-container">
+    <div class="cart-data">
+      <div class="mycart-location-container">
+        <mat-card-title>My cart (1)</mat-card-title>
+        <div class="select-box">
+          <img src="../../../assets/location.PNG" alt="" />
+          <span>Use current location</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column">
+        <div class="bookData">
+          <img
+            src="../../../assets/dont-Make-Me-Think.png"
+            alt=""
+            style="width: 65px; height: 85px"
+          />
+          <div class="details">
+            <span class="book-name">Don't Make Me Think</span>
+            <span class="author-name">by Steve Krug</span>
+            <div class="price">
+              <span class="discount-price">Rs. 1500</span>
+              <span class="main-price">Rs.2000</span>
+            </div>
+
+            <div class="qty-increase-remove-button">
+              <div class="qty-increase">
+                <button class="decreaseQTY">-</button>
+                <div class="display-qty">1</div>
+                <button class="decreaseQTY">+</button>
+              </div>
+
+              <button class="remove-button">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="placeOrder-Container">
+        <button
+          class="placeOrder-button"
+          (click)="PlaceOrderButton()"
+          *ngIf="!hidePlaceOrderButton"
+        >
+          Place order
+        </button>
+      </div>
+    </div>
+  </div>
+  <br />
+  <mat-accordion>
+    <mat-expansion-panel [expanded]="step === 0" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Address Details </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="customer-details">
+        <div class="addNewAdd-Div">
+          <button class="addAdd">Add New Address</button>
+        </div>
+        <div class="name-"></div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
