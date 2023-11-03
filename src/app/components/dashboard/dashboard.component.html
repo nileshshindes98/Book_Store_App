@@ -1,7 +1,7 @@
 <!--****************header****************** -->
 <div class="main">
     <mat-toolbar class="header-toolbar">
-      <div class="logo">
+      <div class="logo" routerLink="/dashboard">
         <img src="../../../assets/bookStoreLogo.svg" alt="">
         <span>Bookstore</span>
       </div>
@@ -10,7 +10,7 @@
       <div class="search-bar">
         <div class="search">
           <div class="searches-input">
-            <input class="input-search" placeholder="Search" type="search" >
+            <input class="input-search" placeholder="Search" type="search" (input)="searchBook()">
           </div>
   
           <button class="search-icon" matTooltip="Main menu" aria-label="Close Search" type="button" aria-hidden="false">
@@ -30,7 +30,7 @@
             Nilesh
         </span>
       </div>
-      <mat-menu #menu="matMenu" class="profile-matMenu">
+      <mat-menu #menu="matMenu" class="profile-matMenu" yPosition="below" xPosition="before">
         <span class="hello">Hello Nilesh,</span>
   
         <div class="menu-profile">
@@ -49,7 +49,7 @@
         <button class="logoutButton" (click)="logout()">Logout</button>
       </mat-menu>
   
-      <div class="cart">
+      <div class="cart" routerLink="cart">
         <img src="../../../assets/supermarket.svg" alt="" class="cart-img">
         <span class="material-symbols-sharp">
           Cart
@@ -57,9 +57,13 @@
       </div>
   
     </mat-toolbar>
+
   <div class="Book-Content">
+
     <router-outlet></router-outlet>
+
   </div>
+
     <!--****************Footer****************** -->
     <mat-toolbar color="primary" class="footer-toolbar">
       <span class="footer-text">Copyright © 2020, Bookstore Private Limited. All Rights Reserved</span>

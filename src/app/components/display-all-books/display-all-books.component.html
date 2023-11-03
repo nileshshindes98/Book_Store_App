@@ -1,12 +1,12 @@
 <div class="book-card-container">
-  <ng-container *ngFor="let book of AllBooksData">
+  <ng-container *ngFor="let book of AllBooksData | searchFilter : SearchText  | sort : sortValue ">
     <mat-card class="book-card">
-      <div class='book-img-div'>
+      <div class='book-img-div' (click)="showBookDetails(book)">
         <img mat-card-image src="../../../assets/Image 11.png" alt="">
       </div>
       <mat-card-content class="book-details">
 
-        <span class="book-name">{{book.bookName}}</span>
+        <span class="book-name">{{book.bookName}}</span>                                        
         <span class="author-name">{{book.author}}</span>
         <div class="rating-and-count">
           <div class="rating">
