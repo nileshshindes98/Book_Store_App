@@ -5,16 +5,22 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class DataService {
 
+  private bookData = new BehaviorSubject<any>(null);
+  bookData$ = this.bookData.asObservable();
 
   private messageSource = new BehaviorSubject([]);
   receiveSearchValue = this.messageSource.asObservable();
-  
+
   private messageSourceSort = new BehaviorSubject([]);
   receiveSearchValueSort = this.messageSourceSort.asObservable();
 
-  constructor() {}
+  constructor() { }
 
- sendSearchValue(data: any) {
+  setBookData(data: any) {
+    this.bookData.next(data)
+  }
+
+  sendSearchValue(data: any) {
     console.log(data);
 
     this.messageSource.next(data)
@@ -24,5 +30,5 @@ export class DataService {
 
     this.messageSourceSort.next(data)
   }
-  
+
 }
