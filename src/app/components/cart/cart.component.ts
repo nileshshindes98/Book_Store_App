@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/app/Services/Cart Service/cart.service';
+import { DataService } from 'src/app/Services/DataService/data.service';
 
 @Component({
   selector: 'app-cart',
@@ -7,17 +8,20 @@ import { CartService } from 'src/app/Services/Cart Service/cart.service';
   styleUrls: ['./cart.component.scss'],
 })
 export class CartComponent implements OnInit {
+  bookData:any;
   qty: number = 1;
   step = 1;
   hidePlaceOrderButton = false;
   cartBooks = [];
 
-  constructor(private cartService: CartService) {}
+  constructor(private cartService: CartService, private dataService : DataService) {}
 
   ngOnInit(): void {
     this.getCartBooks();
+    this.dataService.bookData$.subscribe((data)=>{
+      this.bookData =data;
+    })
   }
-
   increaseQTY() {
     this.qty = this.qty + 1;
   }
@@ -30,6 +34,7 @@ export class CartComponent implements OnInit {
   getCartBooks() {
     this.cartService.getCartBooks().subscribe((res) => {
       console.log(res);
+    
     });
   }
 

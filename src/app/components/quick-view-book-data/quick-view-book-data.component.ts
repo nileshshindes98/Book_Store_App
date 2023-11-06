@@ -21,6 +21,7 @@ export class QuickViewBookDataComponent implements OnInit {
   getBookData() {
     this.dataService.receiveSearchValue.subscribe((res) => {
       this.bookData = res;
+      this.dataService.setBookData(this.bookData);
       console.log(this.bookData);
     });
   }
